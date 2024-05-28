@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntityFrameworkCore.Crypto.DataEncryption</name>
+    </assembly>
+    <members>
+        <member name="T:System.ComponentModel.DataAnnotations.CryptoEncryptedAttribute">
+            <summary>
+            Specifies that the data field value should be encrypted.
+            </summary>
+        </member>
+        <member name="P:System.ComponentModel.DataAnnotations.CryptoEncryptedAttribute.Format">
+            <summary>
+            Returns the storage format for the database value.
+            </summary>
+        </member>
+        <member name="M:System.ComponentModel.DataAnnotations.CryptoEncryptedAttribute.#ctor(System.ComponentModel.DataAnnotations.CryptoStorageFormat)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.CryptoEncryptedAttribute"/> class.
+            </summary>
+            <param name="format">
+            The storage format.
+            </param>
+        </member>
+        <member name="M:System.ComponentModel.DataAnnotations.CryptoEncryptedAttribute.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.CryptoEncryptedAttribute"/> class.
+            </summary>
+        </member>
+        <member name="T:System.ComponentModel.DataAnnotations.CryptoStorageFormat">
+            <summary>
+            Represents the storage format for an encrypted value.
+            </summary>
+        </member>
+        <member name="F:System.ComponentModel.DataAnnotations.CryptoStorageFormat.Default">
+            <summary>
+            The format is determined by the model data type.
+            </summary>
+        </member>
+        <member name="F:System.ComponentModel.DataAnnotations.CryptoStorageFormat.Binary">
+            <summary>
+            The value is stored in binary.
+            </summary>
+        </member>
+        <member name="F:System.ComponentModel.DataAnnotations.CryptoStorageFormat.Base64">
+            <summary>
+            The value is stored in a Base64-encoded string.
+            </summary>
+            <remarks>
+            <b>NB:</b> If the source property is a <see cref="T:System.String"/>,
+            and no encryption provider is configured,
+            the string will not be modified.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.DataEncryption.IEncryptionCryptoProvider">
+            <summary>
+            Provides a mechanism to encrypt and decrypt data.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.IEncryptionCryptoProvider.Encrypt(System.Byte[])">
+            <summary>
+            Encrypts the given input byte array.
+            </summary>
+            <param name="input">Input to encrypt.</param>
+            <returns>Encrypted input.</returns>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.IEncryptionCryptoProvider.Decrypt(System.Byte[])">
+            <summary>
+            Decrypts the given input byte array.
+            </summary>
+            <param name="input">Input to decrypt.</param>
+            <returns>Decrypted input.</returns>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.DataEncryption.Internal.CryptoEncryptionConverter`2">
+            <summary>
+            Defines the internal encryption converter for string values.
+            </summary>
+            <typeparam name="TModel"></typeparam>
+            <typeparam name="TProvider"></typeparam>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Internal.CryptoEncryptionConverter`2.#ctor(Microsoft.EntityFrameworkCore.DataEncryption.IEncryptionCryptoProvider,System.ComponentModel.DataAnnotations.CryptoStorageFormat,Microsoft.EntityFrameworkCore.Storage.ValueConversion.ConverterMappingHints)">
+            <summary>
+            Creates a new <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Internal.CryptoEncryptionConverter`2"/> instance.
+            </summary>
+            <param name="encryptionProvider">Encryption provider to use.</param>
+            <param name="storageFormat">Encryption storage format.</param>
+            <param name="mappingHints">Mapping hints.</param>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.DataEncryption.ModelBuilderExtensions">
+            <summary>
+            Provides extensions for the <see cref="T:Microsoft.EntityFrameworkCore.ModelBuilder"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.ModelBuilderExtensions.UseEncryption(Microsoft.EntityFrameworkCore.ModelBuilder,Microsoft.EntityFrameworkCore.DataEncryption.IEncryptionCryptoProvider)">
+            <summary>
+            Enables encryption on this model using an encryption provider.
+            </summary>
+            <param name="modelBuilder">
+            The <see cref="T:Microsoft.EntityFrameworkCore.ModelBuilder"/> instance.
+            </param>
+            <param name="encryptionProvider">
+            The <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.IEncryptionCryptoProvider"/> to use, if any.
+            </param>
+            <returns>
+            The updated <paramref name="modelBuilder"/>.
+            </returns>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.DataEncryption.PropertyBuilderExtensions">
+            <summary>
+            Provides extensions for the <see cref="T:Microsoft.EntityFrameworkCore.Metadata.Builders.PropertyBuilder"/> type.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo">
+            <summary>
+            Defines an AES key info structure containing a Key and Initialization Vector used for the AES encryption algorithm.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo.Key">
+            <summary>
+            Gets the AES key.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo.IV">
+            <summary>
+            Gets the AES initialization vector.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo.#ctor(System.Byte[],System.Byte[])">
+            <summary>
+            Creates a new <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo"/>.
+            </summary>
+            <param name="key">AES key.</param>
+            <param name="iv">AES initialization vector.</param>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo.Equals(Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo)">
+            <summary>
+            Determines whether the current <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo"/> is equal to another <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo"/>.
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo.Equals(System.Object)">
+            <summary>
+            Determines whether the current object is equal to another object of the same type.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo.GetHashCode">
+            <summary>
+            Calculates the hash code for the current <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo"/> instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo.op_Equality(Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo,Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo)">
+            <summary>
+            Determines whether the current <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo"/> is equal to another <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo"/>.
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo.op_Inequality(Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo,Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo)">
+            <summary>
+            Determines whether the current <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo"/> is not equal to another <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeyInfo"/>.
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeySize">
+            <summary>
+            Specifies the available AES Key sizes used for generating encryption keys and initialization vectors.
+            </summary>
+            <remarks>
+            The key sizes are defined in bits.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeySize.AES128Bits">
+            <summary>
+            AES 128 bits key size.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeySize.AES192Bits">
+            <summary>
+            AES 192 bits key size.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeySize.AES256Bits">
+            <summary>
+            AES 256 bits key size.
+            </summary>
+        </member>
+        <member name="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider">
+            <summary>
+            Implements the Advanced Encryption Standard (AES) symmetric algorithm.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider.AesBlockSize">
+            <summary>
+            AES block size constant.
+            </summary>
+        </member>
+        <member name="F:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider.InitializationVectorSize">
+            <summary>
+            Initialization vector size constant.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider.#ctor(System.Byte[],System.Byte[],System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            Creates a new <see cref="T:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider"/> instance used to perform symmetric encryption and decryption on strings.
+            </summary>
+            <param name="key">AES key used for the symmetric encryption.</param>
+            <param name="initializationVector">AES Initialization Vector used for the symmetric encryption.</param>
+            <param name="mode">Mode for operation used in the symmetric encryption.</param>
+            <param name="padding">Padding mode used in the symmetric encryption.</param>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider.Encrypt(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider.Decrypt(System.Byte[])">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider.StreamToBytes(System.IO.Stream)">
+            <summary>
+            Converts a <see cref="T:System.IO.Stream"/> into a byte array.
+            </summary>
+            <param name="stream">Stream.</param>
+            <returns>The stream's content as a byte array.</returns>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider.CreateCryptographyProvider(System.Byte[],System.Byte[],System.Security.Cryptography.CipherMode,System.Security.Cryptography.PaddingMode)">
+            <summary>
+            Generates an AES cryptography provider.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.DataEncryption.Providers.AesCryptoProvider.GenerateKey(Microsoft.EntityFrameworkCore.DataEncryption.Providers.CryptoAesKeySize)">
+            <summary>
+            Generates an AES key.
+            </summary>
+            <remarks>
+            The key size of the Aes encryption must be 128, 192 or 256 bits. 
+            </remarks>
+            <param name="keySize">AES Key size</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

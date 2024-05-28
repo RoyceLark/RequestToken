@@ -1,0 +1,15 @@
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\bin\Debug\net7.0\resources\Icon.png
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\bin\Debug\net7.0\Identity.RequestToken.deps.json
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\bin\Debug\net7.0\Identity.RequestToken.dll
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\bin\Debug\net7.0\Identity.RequestToken.pdb
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\bin\Debug\net7.0\Identity.RequestToken.xml
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\Identity.RequestToken.csproj.AssemblyReference.cache
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\Identity.RequestToken.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\Identity.RequestToken.AssemblyInfoInputs.cache
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\Identity.RequestToken.AssemblyInfo.cs
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\Identity.RequestToken.csproj.CoreCompileInputs.cache
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\Identity.RequestToken.dll
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\refint\Identity.RequestToken.dll
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\Identity.RequestToken.xml
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\Identity.RequestToken.pdb
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\RequestToken\obj\Debug\net7.0\ref\Identity.RequestToken.dll

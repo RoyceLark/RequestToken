@@ -1,0 +1,29 @@
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.deps.json
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.dll
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.pdb
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.xml
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.csproj.AssemblyReference.cache
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.AssemblyInfoInputs.cache
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.AssemblyInfo.cs
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.csproj.CoreCompileInputs.cache
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.dll
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\refint\EntityFrameworkCore.Crypto.DataEncryption.dll
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.xml
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.pdb
+C:\Users\gmohan.g\Downloads\EntityFrameworkCore.DataEncryption-main (1)\EntityFrameworkCore.DataEncryption-main\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\ref\EntityFrameworkCore.Crypto.DataEncryption.dll
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.deps.json
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.dll
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.pdb
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.xml
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.csproj.AssemblyReference.cache
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.AssemblyInfoInputs.cache
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.AssemblyInfo.cs
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.csproj.CoreCompileInputs.cache
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.dll
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\refint\EntityFrameworkCore.Crypto.DataEncryption.dll
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.xml
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\EntityFrameworkCore.Crypto.DataEncryption.pdb
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\obj\Debug\net8.0\ref\EntityFrameworkCore.Crypto.DataEncryption.dll
+C:\Source\POC\EntityFrameworkCore.Crypto.DataEncryption\src\EntityFrameworkCore.Crypto.DataEncryption\bin\Debug\net8.0\resources\Icon.png

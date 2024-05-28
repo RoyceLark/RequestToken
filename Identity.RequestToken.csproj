@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+		<LangVersion>10.0</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<AssemblyName>Identity.RequestToken</AssemblyName>
+		<RootNamespace>RequestToken</RootNamespace>
+		<IsPackable>true</IsPackable>
+		<Version>8.0</Version>
+		<Authors>Royce Lark</Authors>
+		<PackageId>Identity.RequestToken</PackageId>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<PackageTags>entity-framework-core,requestoken, extensions, dotnet-core, dotnet, encryption</PackageTags>
+		<PackageIcon>Icon.png</PackageIcon>
+		<Copyright>Royce Lark © 2022 - 2024</Copyright>
+		<Description>A plugin for any Identity server provider to return the jwt token for internal service communication.</Description>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+	</PropertyGroup>
+
+	<ItemGroup Condition="('$(TargetFramework)' == 'net7.0')">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="[7,)" />
+	</ItemGroup>
+	<ItemGroup Condition="('$(TargetFramework)' == 'net8.0')">
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="[8,)" />
+	</ItemGroup>
+	
+
+	<ItemGroup>
+		<None Include="..\RequestToken\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\RequestToken\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <PackageReference Include="IdentityModel" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="resources\Icon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</Content>
+	</ItemGroup>
+
+</Project>
