@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A plugin for any Identity server provider to return the jwt token for internal se" +
     "rvice communication.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("8.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.0+5af2c02cec07ca5dfbcd3df72b4b3e900e8a1208")]
 [assembly: System.Reflection.AssemblyProductAttribute("Identity.RequestToken")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Identity.RequestToken")]
 [assembly: System.Reflection.AssemblyVersionAttribute("8.0.0.0")]
