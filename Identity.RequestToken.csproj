@@ -21,10 +21,6 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
-		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-	</PropertyGroup>
-
 	<ItemGroup Condition="('$(TargetFramework)' == 'net7.0')">
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="[7,)" />
 	</ItemGroup>
